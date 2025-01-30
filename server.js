@@ -22,7 +22,7 @@ app.use(express.static("public"));
 
 // Define a route
 app.get("/", (req, res) => {
-  res.render("index", { message: "Hello, World!" });
+  res.render("index");
 });
 
 // Handle file upload
