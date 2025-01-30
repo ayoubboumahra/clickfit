@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Click Fit</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/lightbox.css">
+    <link rel="stylesheet" href="css/jquery.back-to-top.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/lightbox.js"></script>
+    <script src="js/jquery.teletype.js"></script>
+    <script src="js/jquery.back-to-top.js"></script>
+    <script src="js/sweetAlert.min.js"></script>
+    <script src="js/script.js"></script>
+</head>
+<body>
+    <!-- Loader -->
+    <div class="loader-wrapper">
+        <div class="loader"></div>
+    </div>
+
+    <!-- Header -->
+    <header class="hero">
+        <!-- Navbar inside Hero -->
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+                <a class="navbar-brand text-white fw-bold" href="#">Click Fit</a>
+                <button class="navbar-toggler text-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item p-2"><a class="nav-link text-white" href="#">Home</a></li>
+                        <li class="nav-item p-2"><a class="nav-link text-white" href="#">About Us</a></li>
+                        <li class="nav-item p-2"><a class="nav-link text-white" href="#">Our Team</a></li>
+                        <li class="nav-item p-2"><a class="nav-link text-white" href="#">Contact Us</a></li>
+                    </ul>
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link text-white" href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                        <li class="nav-item"><a class="nav-link text-white" href="#"><i class="fa-brands fa-youtube"></i></a></li>
+                        <li class="nav-item"><a class="nav-link text-white" href="#"><i class="fa-brands fa-x-twitter"></i></a></li>
+                        <li class="nav-item"><a class="nav-link text-white" href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Hero Content -->
+        <div class="hero-content">
+            <h1 class="hero-title fw-bold type-text" title="jqueri~1 y^1000  plugins.;jQuery,\njQueryScript.net^2000 , character deletion~20; auto delete^2000 , customisable cursor;">Welcome to Click Fit</h1>
+            <p class="lead">Your fitness journey starts here</p>
+            <a href="#" class="btn btn-primary btn-lg">Get Started</a>
+        </div>
+    </header>
+
+    <!-- Features -->
+    <section id="features" class="bg-light">
+        <div class="container">
+            <!-- Section Title and Subtitle -->
+            <div class="text-center mb-5">
+                <h2 class="display-4 fw-bold">Our Amazing Features</h2>
+                <p class="lead">Explore the key benefits of using Click Fit for your fitness journey.</p>
+            </div>
+    
+            <!-- Features Cards -->
+            <div class="row text-center">
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card border-0 bg-none">
+                        <div class="card-body">
+                            <div class="card-logo">
+                                <i class="fa-solid fa-bolt fa-3x text-primary"></i>
+                            </div>
+                            <h5 class="card-title my-3">Fast & Reliable</h5>
+                            <p class="card-text">Our service ensures quick and reliable results, helping you stay on track with your goals.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card border-0">
+                        <div class="card-body">
+                            <div class="card-logo">
+                                <i class="fa-solid fa-cogs fa-3x text-primary"></i>
+                            </div>
+                            <h5 class="card-title my-3">Easy to Use</h5>
+                            <p class="card-text">Intuitive and simple interface, so you can focus on your fitness without any hassle.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card border-0">
+                        <div class="card-body">
+                            <div class="card-logo">
+                                <i class="fa-solid fa-users fa-3x text-primary"></i>
+                            </div>
+                            <h5 class="card-title my-3">Community Support</h5>
+                            <p class="card-text">Join a community of fitness enthusiasts for motivation, tips, and shared success stories.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section id="testimonials" class="shadow-sm">
+        <div class="container">
+            <!-- Section Title and Subtitle -->
+            <div class="text-center mb-5">
+                <h2 class="display-4 fw-bold">What Our Users Say</h2>
+                <p class="lead">Hear from our satisfied users who have transformed their fitness journey with Click Fit.</p>
+            </div>
+    
+            <!-- Testimonials Carousel -->
+            <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="4000">
+                <div class="carousel-inner">
+                    <!-- Testimonial 1 -->
+                    <div class="carousel-item active">
+                        <div class="row justify-content-center">
+                            <div class="col-md-8 text-center">
+                                <div class="card shadow-sm p-3">
+                                    <img src="./images/person1.jpg" class="rounded-circle mb-3 img-fluid mx-auto" alt="User 1">
+                                    <p class="card-text">"Click Fit has completely transformed my fitness routine! The interface is so easy to use, and the results are amazing!"</p>
+                                    <footer class="blockquote-footer mt-3">
+                                        <cite title="Source Title">Jane Doe, Fitness Enthusiast</cite>
+                                    </footer>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <!-- Testimonial 2 -->
+                    <div class="carousel-item">
+                        <div class="row justify-content-center">
+                            <div class="col-md-8 text-center">
+                                <div class="card shadow-sm p-3">
+                                    <img src="./images/person2.jpg" class="rounded-circle mb-3 img-fluid mx-auto" alt="User 2">
+                                    <p class="card-text">"I’ve tried many fitness apps, but Click Fit is by far the best. The community is supportive, and the progress tracking is fantastic!"</p>
+                                    <footer class="blockquote-footer mt-3">
+                                        <cite title="Source Title">John Smith, Personal Trainer</cite>
+                                    </footer>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <!-- Testimonial 3 -->
+                    <div class="carousel-item">
+                        <div class="row justify-content-center">
+                            <div class="col-md-8 text-center">
+                                <div class="card shadow-sm p-3">
+                                    <img src="./images/person3.jpg" class="rounded-circle mb-3 img-fluid mx-auto" alt="User 3">
+                                    <p class="card-text">"What I love most about Click Fit is how personalized the experience feels. It’s like having a fitness coach in my pocket!"</p>
+                                    <footer class="blockquote-footer mt-3">
+                                        <cite title="Source Title">Emily Taylor, Nutritionist</cite>
+                                    </footer>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Carousel Controls -->
+                <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Customers -->
+    <section id="customers" class="bg-light">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="display-4 fw-bold">Our Happy Customers</h2>
+                <p class="lead">See how our customers enjoy Click Fit and share their amazing moments.</p>
+            </div>
+
+            <div class="text-center mb-4">
+                <form id="uploadImageForm">
+                    <label for="uploadImage" class="btn btn-primary">
+                        <i class="fa-solid fa-upload"></i> Upload Your Image
+                    </label>
+                    <input type="file" id="uploadImage" accept="image/*" class="d-none">
+                </form>
+            </div>
+    
+            <div id="imageGallery" class="row g-4">
+                <!-- Image 1 -->
+                <div class="col-md-4">
+                    <div class="media-card">
+                        <a href="./images/person1.jpg" data-lightbox="imageGallery">
+                            <img src="./images/person1.jpg" class="img-fluid rounded shadow" alt="Person 1">
+                        </a>
+                    </div>
+                </div>
+    
+                <!-- Image 2 -->
+                <div class="col-md-4">
+                    <div class="media-card">
+                        <a href="./images/person2.jpg" data-lightbox="imageGallery">
+                            <img src="./images/person2.jpg" class="img-fluid rounded shadow" alt="Person 2">
+                        </a>
+                    </div>
+                </div>
+    
+                <!-- Image 3 -->
+                <div class="col-md-4">
+                    <div class="media-card">
+                        <a href="./images/person3.jpg" data-lightbox="imageGallery">
+                            <img src="./images/person3.jpg" class="img-fluid rounded shadow" alt="Image 3">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="py-5 bg-white">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="display-4 fw-bold">Contact Us</h2>
+                <p class="lead">Have questions? Get in touch with us!</p>
+            </div>
+    
+            <div class="row justify-content-center">
+                <div class="col-md-8">
+                    <form id="contactForm">
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Your Name</label>
+                            <input type="text" class="form-control" id="name" placeholder="Enter your name" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Your Email</label>
+                            <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="message" class="form-label">Your Message</label>
+                            <textarea class="form-control" id="message" rows="4" placeholder="Type your message" required></textarea>
+                        </div>
+                        <div class="text-center">
+                            <button type="submit" class="btn btn-success"><i class="fa-solid fa-paper-plane"></i> Send Message</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4">
+        <div class="container">
+            <div class="row">
+                <!-- Quick Links -->
+                <div class="col-md-4">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-white text-decoration-none">Home</a></li>
+                        <li><a href="#" class="text-white text-decoration-none">About Us</a></li>
+                        <li><a href="#" class="text-white text-decoration-none">Our Team</a></li>
+                        <li><a href="#" class="text-white text-decoration-none">Contact Us</a></li>
+                    </ul>
+                </div>
+    
+                <!-- Social Media -->
+                <div class="col-md-4 text-center">
+                    <h5>Follow Us</h5>
+                    <div>
+                        <a href="#" class="text-white me-3"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#" class="text-white me-3"><i class="fa-brands fa-youtube"></i></a>
+                        <a href="#" class="text-white me-3"><i class="fa-brands fa-x-twitter"></i></a>
+                        <a href="#" class="text-white"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                </div>
+    
+                <!-- Copyright -->
+                <div class="col-md-4 text-md-end text-center">
+                    <h5>Click Fit</h5>
+                    <p>&copy; 2025 Click Fit. All Rights Reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to top -->
+    <a href="#" class="bck"></a>
+</body>
+</html>
