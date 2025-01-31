@@ -1,4 +1,6 @@
 $(document).ready(function() {
+
+    // Get the text
     $.ajax({
         url: "/text",
         method: "GET",
@@ -18,23 +20,27 @@ $(document).ready(function() {
             $(".loader-wrapper").fadeOut(500);
         }
     });
+    
+    // Button Top
     $('.bck').backToTop({
         iconName:'fas fa-chevron-up',
         fxName :'rightToLeft',
         trigger : 100
     }); 
 
+    // Contact form
     $("#contactForm").on("submit", (event) => {
         event.preventDefault();
         $("#contactForm").trigger("reset");
         Swal.fire({
-            title: "Good job!",
-            text: "You clicked the button!",
+            title: "The message is sent successfully!",
+            text: "Thanks you for contacting us!",
             icon: "success",
             showConfirmButton: false,
         });
     });
 
+    // Image Upload
     $("#uploadImage").change(function (e) {
         e.preventDefault();
         
@@ -47,6 +53,8 @@ $(document).ready(function() {
         }
 
         formData.append("image", file);
+
+        $("#uploadImageForm label").html(`<span class="loader-upload"></span>`);
 
         $.ajax({
             url: "/upload",
@@ -71,6 +79,9 @@ $(document).ready(function() {
             },
             error: function () {
                 alert("Image upload failed.");
+            },
+            complete: function() {
+                $("#uploadImageForm label").html(`<i class="fa-solid fa-upload"></i> Upload Your Image`);
             }
         });
     });

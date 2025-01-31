@@ -12,7 +12,20 @@ const storage = multer.diskStorage({
   },
 });
 
-const upload = multer({ storage });
+// File filter to allow only image files
+const fileFilter = (req, file, cb) => {
+  const allowedTypes = /jpeg|jpg|png|gif/;
+  const mimeType = allowedTypes.test(file.mimetype);
+  const extname = allowedTypes.test(path.extname(file.originalname).toLowerCase());
+
+  if (mimeType && extname) {
+    return cb(null, true);
+  } else {
+    cb(new Error("Only image files are allowed!"), false);
+  }
+};
+
+const upload = multer({ storage, fileFilter });
 
 // Set EJS as the template engine
 app.set("view engine", "ejs");
@@ -25,6 +38,7 @@ app.get("/", (req, res) => {
   res.render("index");
 });
 
+//Get the text from the api http://numbersapi.com/1/30/date?json
 app.get("/text", async(req, res) => {
   const response = await fetch("http://numbersapi.com/1/30/date?json");
   const data = await response.json();

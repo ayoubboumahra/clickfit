@@ -396,6 +396,16 @@ footer .social-icons i:hover {
   animation: spin 1s linear infinite;
 }
 
+.loader-upload {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  border: 6px solid transparent;
+  border-top: 6px solid white;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
 /* Fade-Out Animation */
 .loader-wrapper.hidden {
   opacity: 0;
