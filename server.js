@@ -25,6 +25,12 @@ app.get("/", (req, res) => {
   res.render("index");
 });
 
+app.get("/text", async(req, res) => {
+  const response = await fetch("http://numbersapi.com/1/30/date?json");
+  const data = await response.json();
+  res.json(data);
+})
+
 // Handle file upload
 app.post("/upload", upload.single("image"), (req, res) => {
   if (!req.file) {

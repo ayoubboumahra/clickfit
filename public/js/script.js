@@ -1,6 +1,6 @@
 $(document).ready(function() {
     $.ajax({
-        url: "http://numbersapi.com/1/30/date?json",
+        url: "/text",
         method: "GET",
         success: function(response) {
             $('.type-text' ).each(function() {
